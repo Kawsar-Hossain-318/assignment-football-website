@@ -46,6 +46,10 @@ main{
     font-size: 16px;
     padding: 10px 24px;
 }
+.btn:hover .fas{
+    transition: transform 0.3s;
+    transform: translateX(10px);
+}
 .btn .fa-arrow-right{
     margin-left: 5px;
 }
@@ -174,6 +178,7 @@ main{
     height: 100%;
     display: block;
     border: 1px solid #2D25A0;
+    object-fit: cover;
 }
 .gallery-item:hover .match-img{
     transition: transform 0.3s;
@@ -303,6 +308,9 @@ responsive part start from here
         width: 90%;
         margin: 0 auto;
     }
+    .match-img{
+        object-fit: cover;
+    }
 }
 
 /* tablet device */
@@ -323,6 +331,7 @@ responsive part start from here
     .players{
         grid-template-columns: repeat(2,1fr);
         place-items: center;
+        grid-column-gap: 0px;
     }
     .matches{
         flex-direction: column;
@@ -344,5 +353,8 @@ responsive part start from here
     .footer-logo img {
         width: 95%;
         margin: 0 auto;
+    }
+    .match-img{
+        object-fit: cover;
     }
 }
