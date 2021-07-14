@@ -182,18 +182,42 @@ main{
 }
 /* gallery sections end from here */
 
-/* highlisghts section start from here */
-.highlights{
-    margin-top: 70px;
+/* footer section start from here */
+.footer_area{
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-logo img{
+    width: 483.87px;
+    height: 110px;
+}
+.social-icons ul{
+    padding: 0;
+}
+.social-icons ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 6px;
+}
+.social-icons ul li a{
+    color: gray;
+}
+.social-icons ul li a .fab{
+    height: 36px;
+    width: 36px;
+    background: #0b0d174d;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.description
-.highlight-img{
-    width: 100%;
+.copyright{
+    font-size: 18px;
 }
-/* highlisghts section end from here */
+/* footer section end from here */
 
 
 
@@ -226,3 +250,8 @@ main{
 
 }
 /* here is the end of animation */
+
+/* ---------------------------------
+responsive part start from here
+---------------------------------- */
+
