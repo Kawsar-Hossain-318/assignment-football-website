@@ -130,6 +130,7 @@ main{
     justify-content: center;
     align-items: center;
     line-height: 5px;
+    padding-bottom: 15px;
 }
 .details h3{
     margin: 0 0 15px 0;
@@ -145,13 +146,59 @@ main{
     width: 48%;
     border: 1px solid #000000a1;
 }
-
 /* matches section end from here */
 
+/* gallery sections start from here */
+.gallery-area{
+    margin-top: 70px;
+}
+.section-title{
+    font-size: 28px;
+    color: #0A0826;
+    text-align: center;
+}
+.colored{
+    color: #E02C6D;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+.gallery-item{
+    overflow: hidden;
+    box-shadow: 0px 10px 20px -6px #33333393;
+    position: relative;
+}
+.gallery-item .match-img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 1px solid #2D25A0;
+}
+.gallery-item:hover .match-img{
+    transition: transform 0.3s;
+    transform: scale(1.2);
+}
+/* gallery sections end from here */
+
+/* highlisghts section start from here */
+.highlights{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.description
+.highlight-img{
+    width: 100%;
+}
+/* highlisghts section end from here */
 
 
 
-/* animations */
+
+/* animations are here */
 @keyframes banner{
     0%{
         transform: scale(1);
@@ -178,3 +225,4 @@ main{
     }
 
 }
+/* here is the end of animation */
