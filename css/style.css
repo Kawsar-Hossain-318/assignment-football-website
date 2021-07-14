@@ -13,6 +13,9 @@ main{
     align-items: center;
     margin-top: 70px;
 }
+.container{
+    width: 1050px;
+}
 
 /* header part start from here */
 #header_area{
@@ -47,9 +50,12 @@ main{
 .btn .fa-arrow-right{
     margin-left: 5px;
 }
-.header_right_side img{
+.header_right_side .banner{
     width: 556.01px;
     height: 438px;
+}
+#header_area:hover .banner{
+    animation: banner 1s infinite ;
 }
 /* header part end from here */
 
@@ -80,3 +86,95 @@ main{
     font-weight: 400;
 }
 /* players section end from here */
+
+/* matches section start from here */
+.matches{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.match-title{
+    background-color: #2D25A0;
+}
+.match-title h2{
+    padding: 5px 10px;
+    margin: 0px;
+    font-size: 24px;
+    color: white;
+}
+.previous-match{
+    width: 48%;
+    border: 1px solid #000000a1;
+}
+.teams{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team img {
+    width: 85%;
+    height: 190px;
+}
+.vs{
+    background-color: #E02C6D;
+    border-radius: 25px;
+    padding: 1px 15px;
+    color: #fff;
+}
+.teams:hover .vs{
+    animation: sliding 2s infinite ;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 5px;
+}
+.details h3{
+    margin: 0 0 15px 0;
+    color: #2D25A0;
+    font-size: 20px;
+}
+.details p{
+    color: #5C5E60;
+    margin: 12px 0;
+    font-size: 16px;
+}
+.next-match{
+    width: 48%;
+    border: 1px solid #000000a1;
+}
+
+/* matches section end from here */
+
+
+
+
+/* animations */
+@keyframes banner{
+    0%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(1.1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    75%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes sliding {
+    0%{
+        transform:rotateY(60deg);
+    }
+    100%{
+        transition: rotateY(-60deg);
+    }
+
+}
